@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { CpuService } from './cpu.service';
+import { GpuService } from './gpu.service';
 import { PowerModule } from '../power/power.module';
 
 @Module({
   imports: [PowerModule],
-  providers: [CpuService],
+  providers: [GpuService],
 })
-export class CpuModule {}
+export class GpuModule {}
