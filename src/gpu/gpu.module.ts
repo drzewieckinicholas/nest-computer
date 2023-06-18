@@ -5,5 +5,6 @@ import { PowerModule } from '../power/power.module';
 @Module({
   imports: [PowerModule],
   providers: [GpuService],
+  exports: [GpuService],
 })
 export class GpuModule {}
